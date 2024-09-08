@@ -8,3 +8,5 @@
 ![Simulator Screenshot - iPhone 15 Pro - 2024-09-08 at 20 54 36](https://github.com/user-attachments/assets/08fd3cda-1c2c-481e-a710-d228c90b941b)</br>
 ![Simulator Screenshot - iPhone 15 Pro - 2024-09-08 at 20 54 45](https://github.com/user-attachments/assets/91b46b17-d7fc-40fc-aab3-f71ab7af32a9)</br>
 ![Simulator Screenshot - iPhone 15 Pro - 2024-09-08 at 20 54 49](https://github.com/user-attachments/assets/68870f67-a716-4411-aa4d-98112dd90680)</br>
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-08 at 20 55 17](https://github.com/user-attachments/assets/68fa5f05-7dfe-4d34-a0dd-de894991615c) </br>
