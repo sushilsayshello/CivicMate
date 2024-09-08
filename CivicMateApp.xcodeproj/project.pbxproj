@@ -11,6 +11,17 @@
 		84016CFF2C8DA5A50015422D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016CFE2C8DA5A50015422D /* ContentView.swift */; };
 		84016D012C8DA5A80015422D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84016D002C8DA5A80015422D /* Assets.xcassets */; };
 		84016D042C8DA5A80015422D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84016D032C8DA5A80015422D /* Preview Assets.xcassets */; };
+		84016D0E2C8DA7430015422D /* CivicEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D0D2C8DA7430015422D /* CivicEducationView.swift */; };
+		84016D102C8DA75C0015422D /* CivicEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D0F2C8DA75C0015422D /* CivicEngagementView.swift */; };
+		84016D122C8DA77A0015422D /* GovernmentServiceAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D112C8DA77A0015422D /* GovernmentServiceAssistantView.swift */; };
+		84016D142C8DA7910015422D /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D132C8DA7910015422D /* ProfileSettingsView.swift */; };
+		84016D1A2C8DA9470015422D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D192C8DA9470015422D /* WelcomeView.swift */; };
+		84016D1C2C8DA9610015422D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D1B2C8DA9610015422D /* LoginView.swift */; };
+		84016D1E2C8DA97C0015422D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D1D2C8DA97C0015422D /* HomeView.swift */; };
+		84016D262C8DB5BC0015422D /* CivicGovernmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D252C8DB5BC0015422D /* CivicGovernmentService.swift */; };
+		84016D282C8DB6080015422D /* CivicServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D272C8DB6080015422D /* CivicServiceDetailView.swift */; };
+		84016D2A2C8DB66C0015422D /* CivicEducationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D292C8DB66C0015422D /* CivicEducationModule.swift */; };
+		84016D2C2C8DB6900015422D /* CivicEngagementEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84016D2B2C8DB6900015422D /* CivicEngagementEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		84016CFE2C8DA5A50015422D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84016D002C8DA5A80015422D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84016D032C8DA5A80015422D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84016D0D2C8DA7430015422D /* CivicEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicEducationView.swift; sourceTree = "<group>"; };
+		84016D0F2C8DA75C0015422D /* CivicEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicEngagementView.swift; sourceTree = "<group>"; };
+		84016D112C8DA77A0015422D /* GovernmentServiceAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernmentServiceAssistantView.swift; sourceTree = "<group>"; };
+		84016D132C8DA7910015422D /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		84016D192C8DA9470015422D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		84016D1B2C8DA9610015422D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		84016D1D2C8DA97C0015422D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84016D252C8DB5BC0015422D /* CivicGovernmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicGovernmentService.swift; sourceTree = "<group>"; };
+		84016D272C8DB6080015422D /* CivicServiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicServiceDetailView.swift; sourceTree = "<group>"; };
+		84016D292C8DB66C0015422D /* CivicEducationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicEducationModule.swift; sourceTree = "<group>"; };
+		84016D2B2C8DB6900015422D /* CivicEngagementEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicEngagementEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,17 @@
 			children = (
 				84016CFC2C8DA5A50015422D /* CivicMateAppApp.swift */,
 				84016CFE2C8DA5A50015422D /* ContentView.swift */,
+				84016D192C8DA9470015422D /* WelcomeView.swift */,
+				84016D1B2C8DA9610015422D /* LoginView.swift */,
+				84016D1D2C8DA97C0015422D /* HomeView.swift */,
+				84016D0D2C8DA7430015422D /* CivicEducationView.swift */,
+				84016D0F2C8DA75C0015422D /* CivicEngagementView.swift */,
+				84016D292C8DB66C0015422D /* CivicEducationModule.swift */,
+				84016D2B2C8DB6900015422D /* CivicEngagementEvent.swift */,
+				84016D112C8DA77A0015422D /* GovernmentServiceAssistantView.swift */,
+				84016D272C8DB6080015422D /* CivicServiceDetailView.swift */,
+				84016D252C8DB5BC0015422D /* CivicGovernmentService.swift */,
+				84016D132C8DA7910015422D /* ProfileSettingsView.swift */,
 				84016D002C8DA5A80015422D /* Assets.xcassets */,
 				84016D022C8DA5A80015422D /* Preview Content */,
 			);
@@ -137,8 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84016D102C8DA75C0015422D /* CivicEngagementView.swift in Sources */,
+				84016D0E2C8DA7430015422D /* CivicEducationView.swift in Sources */,
 				84016CFF2C8DA5A50015422D /* ContentView.swift in Sources */,
+				84016D2C2C8DB6900015422D /* CivicEngagementEvent.swift in Sources */,
+				84016D262C8DB5BC0015422D /* CivicGovernmentService.swift in Sources */,
+				84016D1A2C8DA9470015422D /* WelcomeView.swift in Sources */,
+				84016D1E2C8DA97C0015422D /* HomeView.swift in Sources */,
+				84016D142C8DA7910015422D /* ProfileSettingsView.swift in Sources */,
 				84016CFD2C8DA5A50015422D /* CivicMateAppApp.swift in Sources */,
+				84016D282C8DB6080015422D /* CivicServiceDetailView.swift in Sources */,
+				84016D122C8DA77A0015422D /* GovernmentServiceAssistantView.swift in Sources */,
+				84016D2A2C8DB66C0015422D /* CivicEducationModule.swift in Sources */,
+				84016D1C2C8DA9610015422D /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
