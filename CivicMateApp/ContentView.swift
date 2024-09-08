@@ -1,24 +1,7 @@
-//
-//  ContentView.swift
-//  CivicMateApp
-//
-//  Created by admin on 8/9/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        WelcomeView()  // No arguments passed here
     }
-}
-
-#Preview {
-    ContentView()
 }
