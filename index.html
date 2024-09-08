@@ -1,316 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CivicMate - Empowering Civic Engagement</title>
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CivicMate - Enhancing Civic Engagement and Education for All New Zealanders">
+  <title>CivicMate | Empower Your Civic Engagement</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
-        }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    header {
+      background-color: #004d99;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-        /* Navbar Styles */
-        .navbar {
-            background-color: #0044cc;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-        }
+    nav {
+      margin-top: 100px; 
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
 
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      position: relative;
+    }
 
-        .navbar h1 {
-            font-size: 1.8rem;
-        }
+    nav a:hover {
+      color: #ffcc00;
+    }
 
-        .navbar nav ul {
-            list-style: none;
-            display: flex;
-        }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #ffcc00;
+      transition: width 0.3s ease;
+    }
 
-        .navbar nav ul li {
-            margin-left: 2rem;
-        }
+    nav a:hover::after {
+      width: 100%;
+    }
 
-        .navbar nav ul li a {
-            color: white;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
+    .hero {
+      background: linear-gradient(to right, #3a7bd5, #00d2d3);
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-        .navbar nav ul li a:hover {
-            color: #ffcc00;
-        }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(to right, #0044cc, #0056ff);
-            color: white;
-            text-align: center;
-            padding: 6rem 1rem;
-            margin-top: 4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-        }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            animation: fadeInDown 1s ease-in-out;
-        }
+    .cta-button {
+      background-color: #ffcc00;
+      color: #004d99;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            animation: fadeInUp 1s ease-in-out;
-        }
+    .cta-button:hover {
+      background-color: #ffd700;
+      transform: scale(1.05);
+    }
 
-        .cta-btn {
-            padding: 0.8rem 2rem;
-            background-color: #ffcc00;
-            color: #0044cc;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-        .cta-btn:hover {
-            background-color: #ffbb00;
-        }
+    .content h3 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #004d99;
+    }
 
-        /* Features Section */
-        .features {
-            background-color: #f9f9f9;
-            padding: 4rem 0;
-            text-align: center;
-        }
+    .content p {
+      font-size: 1.1rem;
+      color: #333;
+      max-width: 850px;
+      margin: 0 auto;
+    }
 
-        .features h2 {
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-        }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
 
-        .feature-cards {
-            display: flex;
-            justify-content: space-between;
-            gap: 1.5rem;
-        }
+    .feature-box {
+      background-color: white;
+      padding: 35px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .card {
-            background-color: white;
-            padding: 2rem;
-            flex: 1;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
+    .feature-box h4 {
+      font-size: 1.6rem;
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
 
-        .card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
+    .feature-box p {
+      color: #555;
+      font-size: 1.1rem;
+    }
 
-        .card p {
-            font-size: 1rem;
-            color: #555;
-        }
+    footer {
+      background-color: #004d99;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
 
-        /* Contact Section */
-        .contact {
-            background-color: #fff;
-            padding: 4rem 0;
-            text-align: center;
-        }
+    footer p {
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
 
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
+    footer a:hover {
+      color: #ffd700;
+    }
 
-        .contact-form button {
-            padding: 0.8rem 1.6rem;
-            background-color: #0044cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .accordion {
+      background-color: #0056b3;
+      color: white;
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s ease;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
 
-        .contact-form button:hover {
-            background-color: #003399;
-        }
+    .accordion:hover {
+      background-color: #003d7a;
+    }
 
-        /* Footer */
-        .footer {
-            background-color: #0044cc;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
+    .panel {
+      padding: 0 20px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+    }
 
-        .footer p {
-            font-size: 1rem;
-        }
-
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .feature-cards {
-                flex-direction: column;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .cta-btn {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    .panel p {
+      margin: 20px 0;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="container">
-            <h1>CivicMate</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <h1>CivicMate</h1>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Empowering Civic Engagement</h1>
-            <p>Stay informed, get involved, and make a difference with CivicMate! Your all-in-one companion for civic education, engagement, and government services.</p>
-            <a href="#" class="cta-btn">Download the App</a>
-        </div>
-    </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>App Features</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Civic Education</h3>
-                    <p>Learn the basics of democracy, how government works, and more through interactive modules.</p>
-                </div>
-                <div class="card">
-                    <h3>Civic Engagement</h3>
-                    <p>Participate in town halls, consultations, and community events to make your voice heard.</p>
-                </div>
-                <div class="card">
-                    <h3>Government Services</h3>
-                    <p>Access key government services such as housing support, healthcare, and employment services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="hero">
+    <div>
+      <h2>Empowering Your Civic Engagement Journey</h2>
+      <p>Discover how CivicMate can help you stay informed, engaged, and connected with your community.</p>
+      <a href="#features" class="cta-button">Explore Features</a>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form action="#" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  <section id="about" class="content">
+    <h3>About CivicMate</h3>
+    <p>CivicMate is designed to enhance civic engagement and education for all New Zealanders. With a focus on providing accessible information and interactive tools, we aim to foster better community involvement and awareness.</p>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 CivicMate. All rights reserved.</p>
-        </div>
-    </footer>
+  <section id="features" class="content">
+    <h3>Key Features</h3>
+    <div class="features">
+      <div class="feature-box">
+        <h4>Interactive Civic Education</h4>
+        <p>Engage with interactive modules and resources that make learning about civic responsibilities and opportunities easy and enjoyable.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Real-Time Community Updates</h4>
+        <p>Stay informed with real-time updates on local events, community news, and important announcements relevant to your area.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Personalized Engagement Tools</h4>
+        <p>Access tools tailored to your interests and needs, helping you engage with local initiatives and participate in community activities.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Comprehensive Resource Hub</h4>
+        <p>Find a wealth of resources, including guides, FAQs, and educational materials, all designed to support your civic journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="content">
+    <h3>Frequently Asked Questions</h3>
+    <button class="accordion">What is CivicMate?</button>
+    <div class="panel">
+      <p>CivicMate is a platform aimed at improving civic engagement and education for New Zealanders by offering interactive tools, resources, and real-time community updates.</p>
+    </div>
+
+    <button class="accordion">Who can use CivicMate?</button>
+    <div class="panel">
+      <p>CivicMate is designed for all New Zealanders interested in enhancing their civic involvement and staying informed about local and national issues.</p>
+    </div>
+
+    <button class="accordion">How can CivicMate help with community engagement?</button>
+    <div class="panel">
+      <p>CivicMate provides tools and resources that enable users to easily access community news, participate in local events, and stay engaged with civic responsibilities.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at <a href="mailto:support@civicmate.co.nz">support@civicmate.co.nz</a></p>
+    <p>&copy; 2024 CivicMate. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(accordion => {
+      accordion.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 
 </body>
-</html>
 
+</html>
