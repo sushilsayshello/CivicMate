@@ -7,7 +7,7 @@ Welcome to **CivicMate**, an app designed to enhance civic engagement and educat
 ## Watch the Project Video
 Click the image below to watch the project video:
 
-[![Watch the video](https://img.youtube.com/vi/cHRHntruINa/0.jpg)](https://ai.invideo.io/watch/cHRHntruINa)
+[![Watch the video](https://streetcivics.com/wp-content/uploads/2020/03/Untitled-design-24.png)](https://ai.invideo.io/watch/cHRHntruINa)
 
 ---
 
